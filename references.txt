@@ -1,0 +1,4 @@
+Background - Squiary Light from http://subtlepatterns.com/
+Font - Helvetica Neue, http://www.linotype.com/
+CSS reset - Eric Meyer's "Reset CSS" 2.0
+jQuery Event calendar from http://www.vissit.com/projects/eventCalendar/   GNU v3 licence
