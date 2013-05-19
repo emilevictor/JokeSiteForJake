@@ -3,18 +3,16 @@
 	<head>
 		<title>
 			Jake Schoermer - MP for Blair
-		</title><!-- Responsive features on -->
+		</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- Favicon -->
 		<link rel="icon" type="image/png" href="images/favicon.png"><!-- Bootstrap -->
-		<!-- <link href="css/bootstrap.min.css" rel="stylesheet" media="screen"> -->
-
-		<script src="http://code.jquery.com/jquery.js" type="text/javascript">
-</script>
-		<script src="js/bootstrap.min.js" type="text/javascript">
-</script><!-- Style -->
+		<script src="http://code.jquery.com/jquery.js" type="text/javascript"></script>
+		<script src="js/bootstrap.min.js" type="text/javascript"></script>
+		<!-- Style -->
 		<link href="css/bootstrap.css" rel="stylesheet" media="screen" type="text/css">
 		<link href="css/style.css" rel="stylesheet" media="screen" type="text/css">
 		<link href="css/docs.css" rel="stylesheet" media="screen" type="text/css"><!--<link href="css/bootstrap-responsive.css" rel="stylesheet" type="text/css">-->
+		<link rel="stylesheet" href="css/nivo-slider.css" type="text/css">
 		<link rel="stylesheet" href="css/font-awesome.css" type="text/css">
 	</head>
 	<body>
@@ -32,36 +30,55 @@
 			</div>
 			<div class="row">
 				<div class="span12 place-holder-main-image">
-					<img src="images/jake.png" alt="">
+					 <div class="slider-wrapper theme-default">
+			            <div id="slider" class="nivoSlider">
+			                <img src="images/slider/jake1.png" data-thumb="images/slider/jake1.png" alt="Slideshow images of Jake" />
+			                <img src="images/slider/jake2.png" data-thumb="images/slider/jake2.png" alt="Slideshow images of Jake" />
+			                <img src="images/slider/jake3.png" data-thumb="images/slider/jake3.png" alt="Slideshow images of Jake" />
+			                <img src="images/slider/jake4.png" data-thumb="images/slider/jake4.png" alt="Slideshow images of Jake" />
+			                <img src="images/slider/jake5.png" data-thumb="images/slider/jake5.png" alt="Slideshow images of Jake" />
+			            </div>
+			        </div>
 				</div>
 			</div>
 			<div class="nav-container">
 				<ul class="nav nav-pills">
-					<li class="active">
-					<a href="index.html"><span class="icon-home icon-large"></span>Home</a>
+					<li class="">
+					<a href="index.html"><i class="icon-home icon-large"></i>Home</a>
 					</li>
-					<li class="dropdown">
-						<!-- <a href="communityengagement.html" class="dropdown-toggle" data-toggle="dropdown"><span class="icon-group icon-large"></span>Community engagement</a> -->
-						<a href="communityengagement.html"><span class="icon-group icon-large"></span>Community engagement</a>
-					</li>
-					<li style="list-style: none; display: inline">
-						<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu">
-							<li>
-								<a href="mobileoffices.html">Mobile Offices</a>
-							</li>
-							<li>
-								<a href="socialjustice.html">Social Justice</a>
-							</li>
-							<li>
-								<a href="environmental.html">Environmental</a>
-							</li>
+
+
+					<!-- Community engagement menu -->
+					<li class="dropdown active">
+						<a class="dropdown-toggle" data-toggle="dropdown" href="#">
+							<i class="icon-chevron-down"></i></b> Community Engagement
+						</a>
+						
+						<ul class="dropdown-menu">
+							<li><a href="mobileoffice.html"><i class="icon-umbrella"></i> Mobile Offices</a></li>
+							<li><a href="socialjustice.html"><i class="icon-bullhorn"></i> Social Justice Around Blair</a></li>
+							<li><a href="environment.html"><i class="icon-leaf"></i> Environmental</a></li>
+
 						</ul>
 					</li>
-					<li class="">
-						<a href="about.html"><span class="icon-coffee icon-large"></span>About Jake</a>
+					
+
+					<!-- About jake menu -->
+					<li class="dropdown">
+						<a class="dropdown-toggle" data-toggle="dropdown" href="#">
+							<i class="icon-chevron-down"></i></b> About Jake
+						</a>
+						
+						<ul class="dropdown-menu">
+							<li><a href="education.html"><i class="icon-book"></i> Education</a></li>
+							<li><a href="political.html"><i class="icon-group"></i> Political</a></li>
+							<li><a href="work.html"><i class="icon-code-fork"></i> Work</a></li>
+
+						</ul>
 					</li>
+
 					<li class="">
-						<a href="contact.html"><span class="icon-phone-sign icon-large"></span>Contact Jake</a>
+						<a href="contact.html"><i class="icon-phone-sign icon-large"></i>Contact Jake</a>
 					</li>
 				</ul>
 			</div>
@@ -94,18 +111,22 @@
 								</h3>
 								<ul>
 								<li>
-									<a href="#"><span class="icon-facebook-sign icon-large"></span>/jakeSchoermerMP</a>
+									<a href="#"><i class="icon-facebook-sign icon-large"></i>/jakeSchoermerMP</a>
 								</li>
 								<li>
-									<a href="#"><span class="icon-twitter-sign icon-large"></span>@bigDaddy</a>
+									<a href="#"><i class="icon-twitter-sign icon-large"></i>@jakeSchoermerMP</a>
 								</li>
 								<li>
-									<a href="#"><span class="icon-envelope-alt icon-large"></span>bigDaddy@win.gov.au</a>
+									<a href="#"><i class="icon-envelope-alt icon-large"></i>jakeSchoermerMP@win.gov.au</a>
 								</li>
 								<li>
-									<a href="#"><span class="icon-phone icon-large"></span>(00)0000 0000</a>
+									<a href="#"><i class="icon-phone icon-large"></i>(00)0000 0000</a>
 								</li>
 								</ul>
+								<br />
+								<a class="twitter-timeline" href="https://twitter.com/Schermy" data-widget-id="334192919546298368">Tweets by @Schermy</a>
+								<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
 							</div>
 						</div>
 					</div>
@@ -120,5 +141,9 @@
 				</div>
 			</div>
 		</div>
+
+		<!-- Include at the end of the page in order to load all resources first -->
+	    <script type="text/javascript" src="js/jquery.nivo.slider.js"></script>
+		<script src="js/localJS.js" type="text/javascript"></script>
 	</body>
 </html>

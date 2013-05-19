@@ -1,0 +1,8 @@
+[
+	{ "date": "1337594400000", "type": "meeting", "title": "Kissing babies", "description": "Lorem Ipsum dolor set", "url": "http://www.event1.com/" },
+	{ "date": "1337677200000", "type": "demo", "title": "Turning ground", "description": "Meet Jake as he plants the first tree in a carbon capture project at Pullenvale", "url": "http://www.event2.com/" },
+	{ "date": "1337686200000", "type": "meeting", "title": "Test Project Brainstorming", "description": "Lorem Ipsum dolor set", "url": "http://www.event3.com/" },
+	{ "date": "1338890400000", "type": "meeting", "title": "Project B meeting", "description": "Lorem Ipsum dolor set", "url": "http://www.event5.com/" },
+	{ "date": "1339927200000", "type": "demo", "title": "Project A demo", "description": "Whether you are an interested resident of Pullenvale, or an aspiring politician, a Green Party meeting is a fascinating insight into a grassroots organisation at work.", "url": "http://www.event5.com/" },
+	{ "date": "1334656800000", "type": "meeting", "title": "Test Project C Brainstorming", "description": "Lorem Ipsum dolor set", "url": "http://www.event7.com/" }
+]

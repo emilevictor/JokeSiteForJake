@@ -8,19 +8,26 @@
 		<link rel="icon" type="image/png" href="images/favicon.png"><!-- Bootstrap -->
 		<script src="http://code.jquery.com/jquery.js" type="text/javascript"></script>
 		<script src="js/bootstrap.min.js" type="text/javascript"></script>
+		<script src="./js/jquery.eventCalendar.js" type="text/javascript"></script>
 		<!-- Style -->
 		<link href="css/bootstrap.css" rel="stylesheet" media="screen" type="text/css">
 		<link href="css/style.css" rel="stylesheet" media="screen" type="text/css">
 		<link href="css/docs.css" rel="stylesheet" media="screen" type="text/css"><!--<link href="css/bootstrap-responsive.css" rel="stylesheet" type="text/css">-->
 		<link rel="stylesheet" href="css/nivo-slider.css" type="text/css">
 		<link rel="stylesheet" href="css/font-awesome.css" type="text/css">
-		<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+		<!-- Core CSS File. The CSS code needed to make eventCalendar works -->
+		<link rel="stylesheet" href="css/eventCalendar.css">
+		<!-- Theme CSS file: it makes eventCalendar nicer -->
+		<link rel="stylesheet" href="css/eventCalendar_theme_responsive.css">
+				<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+
+	</head>
 	</head>
 	<body>
 		<!-- Header -->
 		<div class="wrapper">
 			<div class="container">
-				<div class="row header-background">
+				<div class="row">
 					<div class="span12">
 						<img src="images/govlogo.png" style="float:left;" alt="">
 						<h1 style="float:left;">
@@ -44,13 +51,13 @@
 			</div>
 			<div class="nav-container">
 				<ul class="nav nav-pills">
-					<li class="active">
+					<li class="">
 					<a href="index.html"><i class="icon-home icon-large"></i>Home</a>
 					</li>
 
 
 					<!-- Community engagement menu -->
-					<li class="dropdown">
+					<li class="dropdown active">
 						<a class="dropdown-toggle" data-toggle="dropdown" href="#">
 							<i class="icon-chevron-down"></i></b> Community Engagement
 						</a>
@@ -88,32 +95,29 @@
 					<!-- left column -->
 					<div class="span9">
 						<div>
+							<div class="place-holder" style="width: 660px; height: 80px;"></div>
+						</div><!-- content row -->
+						<div>
 							<h2>
-								Jake Wins Re-election for the 33rd  time!
+								Community Engagement
 							</h2>
 							<div>
-								<img src="images/jake_professional.jpg" alt="Jake professional image" style="float:left;"/>
 								<p>
-									In an astounding victory, Jake has won re-election for the 33rd time. Through some cunning tricks played by the young greens, Jake secured 99.999% of the electorate's votes. Local voters expressed admiration for the dear leader, heaping nothing but praise upon him.<br /><br />
-									"I think he's a wonderful boy" - said his mum, clearly showing the love that his constituents hold in their hearts for him.<br /><br />
-
-									<a href="#">Read More...</a>
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras porta mauris vitae tortor consectetur lobortis. Nunc tincidunt tempus lorem, sit amet interdum ligula dictum eu. Suspendisse ut faucibus lorem. Donec ac quam vel risus malesuada commodo vitae a sapien. Quisque at tellus a risus pulvinar tempus vitae pretium ligula. Sed dignissim elementum ipsum sed pulvinar. Ut ac pretium urna. Sed sed vehicula magna. Aliquam erat volutpat. Aenean venenatis tempor leo, quis suscipit sem accumsan consequat. Praesent libero erat, egestas nec aliquet id, vehicula sit amet massa. Mauris non turpis non enim imperdiet aliquet vel eu libero. Praesent non tellus pellentesque neque mollis gravida non non mauris. Aenean sagittis, urna id rutrum placerat, odio sem semper nunc, eget blandit quam libero ut magna. Duis sit amet quam vitae magna ornare varius ultricies id elit. Vivamus ultricies eleifend pulvinar. 
 								</p>
 							</div>
-						</div>
-
-						<!-- content row -->
-						<div class="clear">
-							<br /><h2>
-								Clean Up Australia Day is coming
-							</h2>
-							<div>
-								<img src="images/clean_up_australia_day.png" alt="Clean up Australia Day" style="float:right;"/>
-								<p>
-									Clean up Australia day is coming, and Jake will be out and about in Blair, doing what he does best - looking after the environment. We encourage you to bring your family along this sunday to clean up wattle creek. All equipment will be provided, with a free lunch for those participating at the end. You'll also have the chance to talk about policy with Jake and a mobile office.<br /><br />
-
-									<a href="#">Read More...</a>
-								</p>
+						</div><!-- content row -->
+						<div>
+							<div class="g6" style="width: 450px; margin: 0 auto;">
+								<h2 class="h4">Jake Schoermer - Out and About</h2>
+								<p class="demoDesc">Your favourite MP for Blair is always out in his community. Here are his events for May 2013</p>
+								<div id="eventCalendarScroll"></div>
+								<script>
+									$('#eventCalendarScroll').eventCalendar({
+									eventsjson:'json/events.json.php',
+									eventsScrollable: true
+									});
+								</script>
 							</div>
 						</div><!-- content row -->
 					</div><!-- right column -->
